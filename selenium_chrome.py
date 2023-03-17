@@ -27,7 +27,9 @@ class Browser():
         options.add_argument("--disable-notifications")
         options.add_argument("--disable-popups")
         options.add_argument("use-fake-ui-for-media-stream")
-        options.add_experimental_option('excludeSwitches', ['enable-logging', "--block-new-web-content"])
+        options.add_experimental_option('excludeSwitches', ['enable-logging', "--block-new-web-content", "enable-automation"])
+        options.add_experimental_option('useAutomationExtension', False)
+
        
         try:
             #if headless:
